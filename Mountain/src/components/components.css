@@ -1,0 +1,78 @@
+.hero{
+  background-size: cover;
+  /* padding-left: 3%; */
+  /* padding-right: 3%; */
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero button{
+  border-radius: 10px;
+  height: 40px;
+}
+
+@font-face {
+  font-family: 'MonumentExtended';
+  src: url('/eProjects/Mountain/src/assets/fonts/MonumentExtended.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.hero .left h1{
+  color: white;
+  font-size: 45px;
+}
+
+.hero .left p{
+  font-family: "MonumentExtended";
+}
+
+.image-grid {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Big Center Image */
+.big-img {
+  width: 380px;
+  height: 80vh                                                                                                                                                                                                                                                                                          ;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Small Images */
+.small-img {
+  width: 360px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Positioning Small Images */
+.top-img {
+  height: 374px;
+  position: absolute;
+  right: -250px;
+  top: -100px;
+}
+
+.bottom-img {
+  height: 458px;
+  position: absolute;
+  right: -250px;
+  top: 350px;
+}
+
+/* Hide on Small Screens */
+@media (max-width: 768px) {
+  .image-grid {
+    display: none;
+  }
+}
