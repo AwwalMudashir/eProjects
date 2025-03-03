@@ -1,0 +1,157 @@
+[
+  {
+    "category": "Basic Climbing Techniques",
+    "techniques": [
+      {
+        "name": "Scrambling",
+        "description": "A mix of hiking and climbing, often on steep rocky slopes.",
+        "image": "/scrambling.jpg"
+      },
+      {
+        "name": "Rock Climbing",
+        "description": "Using hands and feet to climb rock faces; may involve ropes and harnesses.",
+        "image": "/rock-climbing.jpg"
+      },
+      {
+        "name": "Ice Climbing",
+        "description": "Using ice axes and crampons to ascend frozen surfaces.",
+        "image": "/ice-climbing.jpg"
+      },
+      {
+        "name": "Mixed Climbing",
+        "description": "Combining rock and ice climbing techniques.",
+        "image": "/mixed-climbing.jpg"
+      }
+    ]
+  },
+  {
+    "category": "Rope Techniques & Safety",
+    "techniques": [
+      {
+        "name": "Belaying",
+        "description": "Controlling the rope to catch a climber in case of a fall.",
+        "image": "/belaying.jpg"
+      },
+      {
+        "name": "Rappelling (Abseiling)",
+        "description": "Descending a rope using a friction device.",
+        "image": "/rappelling.jpg"
+      },
+      {
+        "name": "Fixed Ropes",
+        "description": "Ropes anchored along a route for assistance.",
+        "image": "/fixed-ropes.jpg"
+      },
+      {
+        "name": "Glacier Travel & Rope Teaming",
+        "description": "Moving across glaciers while roped together to prevent falls into crevasses.",
+        "image": "/glacier-travel.jpg"
+      }
+    ]
+  },
+  {
+    "category": "Footwork & Movement",
+    "techniques": [
+      {
+        "name": "French Technique (Flat-Footing)",
+        "description": "Used in snow and ice, keeping crampons flat for stability.",
+        "image": "https://img.freepik.com/free-photo/guy-climbs-rocks_72229-96.jpg?t=st=1741011370~exp=1741014970~hmac=0f97868f22b1b580cdd90ef9f2905f67f15f77c617f239276ca60b8360cf0332&w=1800"
+      },
+      {
+        "name": "Front-Pointing",
+        "description": "Using crampon front points on steep ice.",
+        "image": "https://media.istockphoto.com/id/1341170494/photo/ice-climbing-front-pointing-technique.jpg?b=1&s=612x612&w=0&k=20&c=oirGKrA93c2XOnW2fsVI4lj6hGzsp0szY5uHZg-lzw4="
+      },
+      {
+        "name": "Rest Stepping",
+        "description": "A slow, controlled way to conserve energy while ascending.",
+        "image": "https://media.istockphoto.com/id/1193774981/photo/couple-following-everest-base-camp-trekking-route-near-dughla-4620m-backpackers-carrying.jpg?b=1&s=612x612&w=0&k=20&c=f80ePadZ2kViT9f_BFnJq45dBySCvhPGiLXA81ey9_Q="
+      },
+      {
+        "name": "Self-Arrest",
+        "description": "Using an ice axe to stop a fall on a snowy or icy slope.",
+        "image": "https://img.freepik.com/free-photo/high-angle-man-traveling-with-backpack_23-2148749353.jpg?uid=R142318825&ga=GA1.1.482138650.1720018437&semt=ais_hybrid"
+      }
+    ]
+  },
+  {
+    "category": "Navigation & Route Finding",
+    "techniques": [
+      {
+        "name": "Map Reading & Compass Use",
+        "description": "Essential for backcountry travel.",
+        "image": "https://img.freepik.com/free-photo/man-holding-map-compass_53876-146047.jpg?t=st=1741011584~exp=1741015184~hmac=4b8b0683243aab60dbc813dd63ec981ad3fa6f880ffee6af611263de3832a3dd&w=1800"
+      },
+      {
+        "name": "GPS & Altimeter Use",
+        "description": "Helps track location and altitude.",
+        "image": "https://img.freepik.com/free-photo/couple-trekking-forest-together_53876-48922.jpg?uid=R142318825&ga=GA1.1.482138650.1720018437&semt=ais_hybrid"
+      },
+      {
+        "name": "Route Planning",
+        "description": "Identifying safe paths while avoiding hazards like avalanches or crevasses.",
+        "image": "https://img.freepik.com/free-photo/checking-map-directions_53876-30712.jpg?uid=R142318825&ga=GA1.1.482138650.1720018437&semt=ais_hybrid"
+      }
+    ]
+  },
+  {
+    "category": "Snow & Glacier Techniques",
+    "techniques": [
+      {
+        "name": "Kick-Stepping",
+        "description": "Creating steps in the snow with boots.",
+        "image": "https://img.freepik.com/free-photo/view-walking-snow-with-snow-shoes-shoe-spikes-winter_335224-467.jpg?uid=R142318825&ga=GA1.1.482138650.1720018437&semt=ais_hybrid"
+      },
+      {
+        "name": "Ice Screw & Snow Anchor Placement",
+        "description": "Securing protection in snow and ice.",
+        "image": "/ice_screw.jpg"
+      },
+      {
+        "name": "Crevasse Rescue",
+        "description": "Techniques like the Z-Pulley System to pull out a fallen climber.",
+        "image": "/crevasse_rescue.jpg"
+      }
+    ]
+  },
+  {
+    "category": "Altitude & Acclimatization",
+    "techniques": [
+      {
+        "name": "Gradual Ascent",
+        "description": "Helps the body adjust to lower oxygen levels.",
+        "image": "/gradual_ascent.jpg"
+      },
+      {
+        "name": "Hydration & Nutrition",
+        "description": "Prevents altitude sickness.",
+        "image": "/hydration.jpg"
+      },
+      {
+        "name": "Recognizing AMS (Acute Mountain Sickness)",
+        "description": "Knowing when to descend if symptoms appear.",
+        "image": "/ams.jpg"
+      }
+    ]
+  },
+  {
+    "category": "Camping & Survival Skills",
+    "techniques": [
+      {
+        "name": "Snow Shelters & Bivouacs",
+        "description": "Emergency shelters for extreme conditions.",
+        "image": "/snow_shelter.jpg"
+      },
+      {
+        "name": "Fire & Cooking at High Altitudes",
+        "description": "Adjusting for low oxygen and temperature.",
+        "image": "/fire_cooking.jpg"
+      },
+      {
+        "name": "Emergency First Aid",
+        "description": "Treating hypothermia, frostbite, and altitude sickness.",
+        "image": "/first_aid.jpg"
+      }
+    ]
+  }
+]

@@ -6,7 +6,7 @@ const Hero = () => {
     <div>
         <div className="w-[100%] h-[100vh] bg-[url('/hero1.jpg')] flex pl-[3%] pr-[3%]  hero ">
 
-    <div className="left w-[65%]">
+    <div className="left w-[60%]">
       <div className="grid justify-start items-start gap-[15px] sm:mt-[50%] mt-[30%] ">
         <h1 className="text-white text-8xl bg-white">Reconnect with Nature</h1>
         <p className="text-[gray] text-2xl   w-[80%]">Breathe in the fresh mountain air and find peace in the beauty of the wild.</p>
@@ -16,15 +16,15 @@ const Hero = () => {
       </div>
     </div>
 
-    {/* <div className="right w-[35%]"> */}
 
-  <div class="image-grid">
+  <div class="image-grid ">
   <img class="big-img" src="/hero2.jpg" alt="Mountain 1"/>
+
+  <div className='w-[50%] flex flex-col gap-[20px]'>
   <img class="small-img top-img" src="/hero3.jpg" alt="Mountain 2"/>
   <img class="small-img bottom-img" src="/hero4.jpg" alt="Mountain 3"/>
+  </div>
 </div>
-    {/* </div> */}
-
 
 </div>
 

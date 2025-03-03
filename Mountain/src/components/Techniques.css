@@ -1,0 +1,75 @@
+.intro-section {
+  text-align: center;
+  padding: 20px;
+  background: var(--tertiary-color);
+  color: black;
+  border-radius: 8px;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.accordion-item {
+  background: var(--tertiary-color);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+}
+
+.accordion-content {
+  padding: 15px;
+  background: white;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width:800px) {
+  .accordion-content{
+    grid-template-columns: 1fr;
+  }
+}
+
+.technique-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.technique-image {
+  width: 100%;
+  height: 320px;
+  max-width: 500px;
+  border-radius: 8px;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.arrow {
+  font-size: 1.5rem;
+}
+
+h3{
+  color: var(--secondary-color);
+}
+

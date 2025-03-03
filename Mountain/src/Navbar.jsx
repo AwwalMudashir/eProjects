@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 import './navbar.css';
 
 const Navbar = () => {
@@ -7,22 +7,14 @@ const Navbar = () => {
   const location = useLocation();
 
   const [isOpen, setIsOpen] = useState(false);
-  const [isTransparent, setIsTransparent] = useState(true); // State to control navbar background
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  // Initialize the active item based on the current URL path
+  const [isTransparent, setIsTransparent] = useState(true);
   const [activeItem, setActiveItem] = useState('');
 
   useEffect(() => {
     const currentPath = location.pathname.replace('/', '') || 'home';
     setActiveItem(currentPath);
 
-    // Check if the current path should have a dynamic transparent background
-    const pagesWithTransparentBackground = ['home', 'about', 'history'];
-
+    const pagesWithTransparentBackground = ['home', 'about', 'history', 'contact'];
     const handleScroll = () => {
       if (pagesWithTransparentBackground.includes(currentPath)) {
         setIsTransparent(window.scrollY === 0);
@@ -31,47 +23,52 @@ const Navbar = () => {
       }
     };
 
-    // Attach scroll listener
     window.addEventListener('scroll', handleScroll);
-
-    // Run initially to set the correct state
     handleScroll();
 
-    // Cleanup listener on unmount or path change
     return () => window.removeEventListener('scroll', handleScroll);
   }, [location.pathname]);
 
   const handleItemClick = (item) => {
     setActiveItem(item);
-    navigate(`/${item === 'home' ? '' : item}`);
   };
 
   return (
     <div>
-      <nav
-        className={`nav ${isTransparent ? 'transparent' : 'black-bg'} ${
-          isTransparent ? '' : 'shadow-custom'
-        }`}
-      >
+      <nav className={`nav ${isTransparent ? 'transparent' : 'bg-[#8b4513]'} ${isTransparent ? '' : 'shadow-custom'}`}>
         <img className='logo' onClick={() => navigate('/')} src="/logo1.png" alt="Mountain Hills Logo" />
-
         <ul className={`nav-lists ${isOpen ? 'open' : ''}`}>
-          <li className={`nav-item ${activeItem === 'home' ? 'active' : ''}`} onClick={() => handleItemClick('home')}>
-            Home
+          <li>
+            <div className={`nav-item-container ${activeItem === 'home' ? 'active' : ''}`}>
+              <Link to={'/'} className={`nav-item links text-[white] ${isTransparent ? '' : 'hover:text-[black]'} `} onClick={() => handleItemClick('home')}>
+                Home
+              </Link>
+            </div>
           </li>
-          <li className={`nav-item ${activeItem === 'history' ? 'active' : ''}`} onClick={() => handleItemClick('history')}>
-            History
+          <li>
+            <div className={`nav-item-container ${activeItem === 'history' ? 'active' : ''}`}>
+              <Link to={'/history'} className={`nav-item links text-[white] ${isTransparent ? '' : 'hover:text-[black]'} `} onClick={() => handleItemClick('history')}>
+                History
+              </Link>
+            </div>
           </li>
-          <li className={`nav-item ${activeItem === 'about' ? 'active' : ''}`} onClick={() => handleItemClick('about')}>
-            About
+          <li>
+            <div className={`nav-item-container ${activeItem === 'about' ? 'active' : ''}`}>
+              <Link to={'/about'} className={`nav-item links text-[white] ${isTransparent ? '' : 'hover:text-[black]'} `} onClick={() => handleItemClick('about')}>
+                About
+              </Link>
+            </div>
           </li>
-          <li className={`nav-item ${activeItem === 'contact' ? 'active' : ''}`} onClick={() => handleItemClick('contact')}>
-            Contact
+          <li>
+            <div className={`nav-item-container ${activeItem === 'contact' ? 'active' : ''}`}>
+              <Link to={'/contact'} className={`nav-item links text-[white] ${isTransparent ? '' : 'hover:text-[black] border-[black]'} `} onClick={() => handleItemClick('contact')}>
+                Contact
+              </Link>
+            </div>
           </li>
         </ul>
-
-        <div className='bar-t' onClick={toggleMenu}>
-          {isOpen ? <i className="fa-solid fa-xmark"></i> : <i className="fa-solid fa-bars"></i>}
+        <div className='bar-t' onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? <div className={`${isTransparent ? '' : 'text-[white]'}`}><i className="fa-solid fa-xmark"></i></div> : <div className={`${isTransparent ? '' : 'text-[white]'}`}><i className="fa-solid fa-bars"></i></div>}
         </div>
       </nav>
     </div>

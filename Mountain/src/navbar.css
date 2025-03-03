@@ -178,8 +178,8 @@
 }
 
 /* Active Item (Highlight) */
-.active {
-  border-bottom: 3px solid #8B4513;
+.nav-item.active {
+  border-bottom: 3px solid #8B4513 !important;
 }
 
 /* Color Change Based on Navbar State */
@@ -212,7 +212,7 @@
     top: 80px;
     left: 0;
     width: 100%;
-    background-color: black;
+    background-color: var(--primary-color);
     flex-direction: column;
     text-align: center;
     padding: 20px 0;
@@ -235,8 +235,28 @@
   .bar-t {
     display: block;
   }
+
+  .nav{
+    /* width: 92%; */
+  }
 }
 
 .logo{
   width: 150px;
+}
+
+.links {
+  text-decoration: none; /* Ensure default link styling isn't interfering */
+  padding-bottom: 5px; /* Add space for the border */
+}
+
+.nav-lists .nav-item.active {
+  border-bottom: 3px solid #8B4513;
+}
+
+
+.nav-item-container.active {
+  border-bottom: 3px solid #8B4513;
+  display: inline-block; /* Ensure the border applies properly */
+  padding-bottom: 5px;
 }

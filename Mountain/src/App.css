@@ -7,3 +7,11 @@ body{
   width: 94.35%;
 }
 
+:root {
+  --primary-color:  #8b4513;
+  --secondary-color: #ad5a10;
+  --tertiary-color: #f8e78f;
+  --gray-color: #f0f0f0;
+  --white-color: #ffffff;
+  --black-color: #222;
+}

@@ -1,0 +1,141 @@
+footer {
+  background-color: var(--secondary-color);
+  /* padding: 4rem 5% 0; */
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 40px;
+  /* padding-bottom: 40px; */
+  width: 100vw;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* text-align: center;/ */
+}
+
+.footer-section {
+  padding: 0 1rem;
+}
+
+.footer-logo img {
+  width: 300px;
+  /* max-width: 150px; */
+  /* height: auto; */
+}
+
+.footer-section h4 {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.footer-description {
+  margin-top: 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-links, .contact-info {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links{
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.footer-links li, .contact-info li {
+  margin-bottom: 0.8rem;
+  color: white;
+}
+
+.footer-links a, .contact-info a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--light-text);
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.social-links {
+  display: flex;
+  /* justify-content: flex-end; */
+  align-items:self-end;
+  gap: 1rem;
+  /* height: 100%; */
+  margin-top: 2rem;
+}
+
+.social-link {
+  color: white;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: var(--light-text);
+  color: white;
+  transition: 0.85s;
+  transform: scale(1.02);
+}
+
+
+
+.footer-bottom {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.copyright {
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    /* text-align: center; */
+  }
+
+  .f1{
+    display: none;
+  }
+  .social-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    gap: 1rem;
+  }
+
+  .footer-section {
+    padding: 0 0.5rem;
+  }
+}
