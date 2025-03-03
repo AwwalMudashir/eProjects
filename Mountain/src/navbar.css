@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Poppins:wght@200&display=swap');
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* height: 30px; */
+  margin: auto;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.nav-lists {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  overflow: hidden;
+  font-family: "Outfit", sans-serif;
+  padding: 0 3%;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  justify-content: center; /* Centers the nav items between the logo and the phone icon */
+}
+
+.nav-item {
+  padding: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+  color: #8B4513;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-lists {
+    max-height: 0;
+    opacity: 0;
+    flex-direction: column;
+    padding: 0;
+    position: absolute;
+    top: 60px; /* Adjust based on the height of your nav */
+    left: 0;
+    background-color: white;
+    width: 100%;
+  }
+
+  .nav-lists.max-h-screen {
+    max-height: 300px; /* Enough space to display all items */
+    padding: 20px 3%;
+  }
+
+  .bar-t {
+    display: block;
+  }
+
+  .bar a {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .nav-lists {
+    flex-direction: row;
+    justify-content: center; /* Centers the nav items between the logo and the phone icon */
+    max-height: none;
+    opacity: 1;
+    padding: 0;
+    position: static;
+  }
+
+  .bar-t {
+    display: none;
+  }
+}
+
+.bar {
+  display: none;
+}
+
+/* Show only on small and tablet screens */
+@media screen and (max-width: 1024px) {  /* Adjust breakpoint as needed */
+  .bar {
+    display: flex;  /* Show hamburger menu */
+    align-items: center;
+    font-size: 24px; /* Adjust size if needed */
+  }
+
+  /* Hide the normal nav list on small screens */
+  .nav-lists {
+    position: absolute;
+    top: 70px; /* Adjust based on navbar height */
+    left: 0;
+    width: 100%;
+    background: white; /* Adjust based on design */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    padding: 16px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+
+    /* Initially hidden */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+  }
+
+  /* Show nav list when menu is open */
+  .nav-lists.open {
+    max-height: 300px; /* Adjust for content */
+    opacity: 1;
+  }
+}
+
+.bar-t{
+  font-size: 30px;
+  color: #8B4513;
+}
+
+@font-face {
+  font-family: 'MonumentExtended';
+  src: url('/src/assets/fonts/MonumentExtended.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Navbar Container */
+.nav {
+  width: 95%;
+  height: 80px;
+  padding: 0 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+/* Transparent Navbar */
+.transparent {
+  background: transparent;
+}
+
+/* Black Background Navbar */
+.black-bg {
+  background-color: black;
+}
+
+/* Add Shadow When Scrolled */
+.shadow-custom {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styling */
+.logo {
+  width: 150px;
+  cursor: pointer;
+}
+
+/* Navigation List */
+.nav-lists {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+/* Navigation Items */
+.nav-item {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Active Item (Highlight) */
+.nav-item.active {
+  border-bottom: 3px solid #8B4513 !important;
+}
+
+/* Color Change Based on Navbar State */
+.transparent .nav-item {
+  color: white;
+}
+
+.black-bg .nav-item {
+  color: black;
+}
+
+.transparent .nav-item:hover {
+  color: #8B4513;
+}
+
+.black-bg .nav-item:hover {
+  color: gray;
+}
+
+/* Mobile Menu */
+.bar-t {
+  cursor: pointer;
+  display: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .nav-lists {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+  }
+
+  .nav-lists.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+  }
+
+  .nav-item {
+    padding: 10px 0;
+  }
+
+  .bar-t {
+    display: block;
+  }
+
+  .nav{
+    /* width: 92%; */
+  }
+}
+
+.logo{
+  width: 150px;
+}
+
+.links {
+  text-decoration: none; /* Ensure default link styling isn't interfering */
+  padding-bottom: 5px; /* Add space for the border */
+}
+
+.nav-lists .nav-item.active {
+  border-bottom: 3px solid #8B4513;
+}
+
+
+.nav-item-container.active {
+  border-bottom: 3px solid #8B4513;
+  display: inline-block; /* Ensure the border applies properly */
+  padding-bottom: 5px;
+}

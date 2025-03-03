@@ -1,97 +1,49 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
+import './ticker.css'
 
-const ticker = () => {
+const Ticker = () => {
+  const [tickerText, setTickerText] = useState("Fetching location and time...");
 
-  function updateTicker() {
-    const ticker = document.getElementById("ticker");
-    const now = new Date();
-    const dateTimeString = now.toLocaleString();
-    
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(position => {
+  useEffect(() => {
+    const updateTicker = () => {
+      const now = new Date();
+      const dateTimeString = now.toLocaleString();
+
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          async (position) => {
             const { latitude, longitude } = position.coords;
-            fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`)
-                .then(response => response.json())
-                .then(data => {
-                    const location = data.display_name || `Lat: ${latitude}, Lon: ${longitude}`;
-                    ticker.innerHTML = `📍 ${location} | 🕒 ${dateTimeString}`;
-                })
-                .catch(() => {
-                    ticker.innerHTML = `📍 Location not found | 🕒 ${dateTimeString}`;
-                });
-        }, () => {
-            ticker.innerHTML = `📍 Location permission denied | 🕒 ${dateTimeString}`;
-        });
-    } else {
-        ticker.innerHTML = `📍 Geolocation not supported | 🕒 ${dateTimeString}`;
-    }
-}
+            try {
+              const response = await fetch(
+                `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`
+              );
+              const data = await response.json();
+              const location = data.display_name || `Lat: ${latitude}, Lon: ${longitude}`;
+              setTickerText(`📍 ${location} | 🕒 ${dateTimeString}`);
+            } catch {
+              setTickerText(`📍 Location not found | 🕒 ${dateTimeString}`);
+            }
+          },
+          () => {
+            setTickerText(`📍 Location permission denied | 🕒 ${dateTimeString}`);
+          }
+        );
+      } else {
+        setTickerText(`📍 Geolocation not supported | 🕒 ${dateTimeString}`);
+      }
+    };
 
-setInterval(updateTicker, 1000);
-updateTicker();
+    updateTicker();
+    const interval = setInterval(updateTicker, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <div>
-      
+    <div className="fixed bottom-0 w-full bg-gray-900 text-[white] py-2 overflow-hidden" style={{zIndex:"99",backgroundColor:"#743a13",position:"fixed",bottom:"0"}}>
+      <marquee className="whitespace-nowrap animate-marquee px-4">{tickerText}</marquee>
     </div>
-  )
-}
+  );
+};
 
-export default ticker
-
-// <!DOCTYPE html>
-// <html lang="en">
-// <head>
-//     <meta charset="UTF-8">
-//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-//     <title>Scrolling Ticker with Geolocation</title>
-//     <style>
-//         body {
-//             font-family: Arial, sans-serif;
-//             margin: 0;
-//             padding: 0;
-//             display: flex;
-//             flex-direction: column;
-//             justify-content: space-between;
-//             height: 100vh;
-//         }
-        
-//         .ticker-container {
-//             position: fixed;
-//             bottom: 0;
-//             width: 100%;
-//             background: #333;
-//             color: #fff;
-//             padding: 10px 0;
-//             overflow: hidden;
-//             white-space: nowrap;
-//         }
-
-//         .ticker-content {
-//             display: inline-block;
-//             padding-left: 100%;
-//             animation: ticker-scroll 15s linear infinite;
-//         }
-
-//         @keyframes ticker-scroll {
-//             from {
-//                 transform: translateX(100%);
-//             }
-//             to {
-//                 transform: translateX(-100%);
-//             }
-//         }
-//     </style>
-// </head>
-// <body>
-
-//     <div class="ticker-container">
-//         <div class="ticker-content" id="ticker">Fetching location and time...</div>
-//     </div>
-
-//     <script>
-
-//     </script>
-
-// </body>
-// </html>
+export default Ticker;
