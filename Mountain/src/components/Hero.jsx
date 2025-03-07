@@ -1,4 +1,5 @@
 import React from 'react'
+import {  Link } from 'react-router-dom';
 import './components.css'
 
 const Hero = () => {
@@ -11,7 +12,9 @@ const Hero = () => {
         <h1 className="text-white text-8xl bg-white">Reconnect with Nature</h1>
         <p className="text-[gray] text-2xl   w-[80%]">Breathe in the fresh mountain air and find peace in the beauty of the wild.</p>
       <button className='border-none bg-[#8B4513] text-[white] p-4 ml-[3px] h-16 w-[30%] md:w-[20%] cursor-pointer'>
-        Learn More
+      <Link to={'/hazard'} >
+             Lear more
+              </Link>
       </button>
       </div>
     </div>

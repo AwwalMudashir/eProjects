@@ -4,7 +4,7 @@ import Home from './pages/Home'
 import Contact from './pages/Contact'
 import About from './pages/About'
 import TypeDetail from './components/TypeDetail'
-import History from './pages/History'
+import Hazard from './pages/Hazard'
 
 const Display = () => {
   return (
@@ -12,8 +12,8 @@ const Display = () => {
     <Route path='/' element={<Home/>} />
     <Route path='/contact' element={<Contact/>} />
     <Route path='/about' element={<About/>} />
-    <Route path='/history' element={<History/>} />
     <Route path="/type/:id" element={<TypeDetail/>} />
+    <Route path="/hazard" element={<Hazard/>} />
    </Routes>
   )
 }
