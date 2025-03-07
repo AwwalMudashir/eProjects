@@ -105,12 +105,12 @@
       {
         "name": "Ice Screw & Snow Anchor Placement",
         "description": "Securing protection in snow and ice.",
-        "image": "/ice_screw.jpg"
+        "image": "https://img.freepik.com/free-photo/two-men-cleaning-snow-ski-resort_107420-96226.jpg?uid=R142318825&ga=GA1.1.482138650.1720018437&semt=ais_hybrid"
       },
       {
         "name": "Crevasse Rescue",
         "description": "Techniques like the Z-Pulley System to pull out a fallen climber.",
-        "image": "/crevasse_rescue.jpg"
+        "image": "https://img.freepik.com/free-photo/man-holding-snow-shovel-ski-resort_107420-96228.jpg?uid=R142318825&ga=GA1.1.482138650.1720018437&semt=ais_hybrid"
       }
     ]
   },
@@ -120,17 +120,17 @@
       {
         "name": "Gradual Ascent",
         "description": "Helps the body adjust to lower oxygen levels.",
-        "image": "/gradual_ascent.jpg"
+        "image": "https://img.freepik.com/free-photo/woman-hiking-mountains_1303-11192.jpg?uid=R142318825&ga=GA1.1.482138650.1720018437&semt=ais_hybrid"
       },
       {
         "name": "Hydration & Nutrition",
         "description": "Prevents altitude sickness.",
-        "image": "/hydration.jpg"
+        "image": "https://img.freepik.com/free-photo/handsome-fit-man-feels-thirsty-drinks-water-from-bottle-has-black-skin-needs-gather-his-strength-wears-casual-vest-poses-high-against-blurred-town-had-tiring-morning-jog_273609-29391.jpg?uid=R142318825&ga=GA1.1.482138650.1720018437&semt=ais_hybrid"
       },
       {
         "name": "Recognizing AMS (Acute Mountain Sickness)",
         "description": "Knowing when to descend if symptoms appear.",
-        "image": "/ams.jpg"
+        "image": "https://img.freepik.com/free-photo/biologist-forest_53876-24864.jpg?uid=R142318825&ga=GA1.1.482138650.1720018437&semt=ais_hybrid"
       }
     ]
   },
@@ -140,17 +140,17 @@
       {
         "name": "Snow Shelters & Bivouacs",
         "description": "Emergency shelters for extreme conditions.",
-        "image": "/snow_shelter.jpg"
+        "image": "https://img.freepik.com/free-photo/people-climbing-snowy-hill_23-2147833199.jpg?uid=R142318825&ga=GA1.1.482138650.1720018437&semt=ais_hybrid"
       },
       {
         "name": "Fire & Cooking at High Altitudes",
         "description": "Adjusting for low oxygen and temperature.",
-        "image": "/fire_cooking.jpg"
+        "image": "https://img.freepik.com/free-photo/cups-pot-near-fire_23-2147833229.jpg?uid=R142318825&ga=GA1.1.482138650.1720018437&semt=ais_hybrid"
       },
       {
         "name": "Emergency First Aid",
         "description": "Treating hypothermia, frostbite, and altitude sickness.",
-        "image": "/first_aid.jpg"
+        "image": "https://img.freepik.com/free-photo/full-shot-people-working-together_23-2148456490.jpg?uid=R142318825&ga=GA1.1.482138650.1720018437&semt=ais_hybrid"
       }
     ]
   }

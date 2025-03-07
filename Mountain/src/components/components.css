@@ -85,6 +85,11 @@
   background-size: cover;
 }
 
+.history-hero{
+  background-image: url('/scrambling.jpg');
+  background-size: cover;
+}
+
 .video-container {
   /* position: relative; */
   /* width: 100%; */
@@ -126,4 +131,13 @@
   .background-video{
     width: 100vw;
   }
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark transparent layer */
+  backdrop-filter: blur(8px); /* Smooth blur effect */
+  /* z-index: 1; */
 }
