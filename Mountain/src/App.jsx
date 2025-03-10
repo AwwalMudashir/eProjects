@@ -4,18 +4,21 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import Display from './Display'
 import Ticker from './components/ticker';
-import Hazard from './pages/Hazard'
+import BackToTop from './BackToTop'
+import ScrollAnimation from './ScrollAnimation'
 
 
 function App() {
 
   return (
       <div>
+        <ScrollAnimation/>
         <div>
         <Navbar/>
         <Display/>
         <Ticker/>
         <Footer/>
+        <BackToTop/>
         </div>
         
       </div>

@@ -1,0 +1,72 @@
+.advancements-section {
+  width: 100%;
+  padding: 60px 3%;
+  background-color: #f4f4f4;
+}
+
+/* Intro Section */
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.intro h2 {
+  font-size: 2.5rem;
+  color: #8b4513;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  color: gray;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Advancements Grid */
+.advancements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Advancement Card */
+.advancement-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.advancement-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Icons */
+.advancement-card i {
+  font-size: 2.5rem;
+  color: #ad5a10;
+  margin-bottom: 10px;
+}
+
+.advancement-card h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #8b4513;
+  margin-bottom: 10px;
+}
+
+.advancement-card p {
+  font-size: 1rem;
+  color: gray;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .advancements-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -21,7 +21,7 @@ const Newsletter = () => {
   }
 
   return (
-    <div className='news'>
+    <div className='news scroll-element'>
       <section id="lead-capture">
   <section className="visuals">
 
@@ -32,7 +32,7 @@ const Newsletter = () => {
       <p className='my-[10px] '>Join more than 600+ smiling patients receiving monthly updates and offers including:</p>
       <ul className='ml-[25px] my-[10px]'>
         <li>Savings on consultations</li>
-        <li>Information about oral health</li>
+        <li>Information about Mountaineering</li>
         <li>and much more!</li>
       </ul>
       <form id="newsletter-sign-up" name="Newsletter sign-up form" method="dialog">
@@ -46,7 +46,9 @@ const Newsletter = () => {
     </div>
     <div id="thanks">
       <h2>Thank you for joining us! 🌟</h2>
-      <p>Welcome to the dental family, superstar! Get ready for exclusive savings, expert oral health tips, and monthly smiles delivered straight to your inbox.</p> 
+      <br />
+      <br />
+      <p>Welcome to the Alpine Ascents family, superstar! Get ready for exclusive savings, expert mountaineering tips, and monthly deets delivered straight to your inbox.</p> 
       <p>We're thrilled to have you aboard! 😁</p>
     </div>
   </section>

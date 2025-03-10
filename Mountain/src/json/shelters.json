@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Tents",
+    "description": "The most common and reliable shelter in mountaineering.",
+    "examples": ["4-Season Tents", "Single-Wall Tents", "Double-Wall Tents"],
+    "use_case": "Used in high-altitude expeditions like Everest Base Camp."
+  },
+  {
+    "id": 2,
+    "name": "Bivouac (Bivy) Shelter",
+    "description": "A minimalist approach for fast and light climbing.",
+    "examples": ["Bivy Sack", "Rock Shelters or Overhangs"],
+    "use_case": "Climbers use bivy sacks on exposed ridges or big walls like El Capitan."
+  },
+  {
+    "id": 3,
+    "name": "Snow Shelters",
+    "description": "Used in winter and high-altitude mountaineering when tents are not an option.",
+    "examples": ["Igloos", "Snow Caves", "Quinzhee"],
+    "use_case": "Snow caves are common in Arctic and polar expeditions."
+  },
+  {
+    "id": 4,
+    "name": "Emergency Shelters",
+    "description": "Used when caught in storms or dangerous conditions.",
+    "examples": ["Bothies", "Survival Blankets & Tarps", "Crevasse Shelters"],
+    "use_case": "Bothies are found in Scotland and UK mountains."
+  },
+  {
+    "id": 5,
+    "name": "High-Altitude Camps",
+    "description": "Climbers set up multiple camps at different elevations.",
+    "examples": ["Ice Walls & Rock Walls"],
+    "use_case": "Everest has Base Camp, Camp 1, Camp 2, Camp 3, and Camp 4 before reaching the summit."
+  },
+  {
+    "id": 6,
+    "name": "Portaledges",
+    "description": "Hanging tents used on vertical rock faces for multi-day climbs.",
+    "examples": ["Used on El Capitan and other big walls"],
+    "use_case": "Common in Yosemite National Park."
+  }
+]

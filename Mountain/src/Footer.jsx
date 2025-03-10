@@ -12,7 +12,7 @@ const Footer = () => {
             </div>
 
             <div className="footer-section">
-                <h4 className='text-[white]'>Quick Links</h4>
+                <h4 className='text-[white]'>Alpine Ascents</h4>
                 <p className="footer-description mb-[20px]">Exploring the majesty of mountains and sharing the rich history of mountaineering with enthusiasts worldwide.</p>
                 <ul className="footer-links">
                     <li><a href="#home">Home</a></li>

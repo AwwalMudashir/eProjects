@@ -1,0 +1,40 @@
+.visitor-header {
+  top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.logo2 {
+  width: 150px;
+  height: auto;
+}
+
+.visitor-count {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .visitor-header {
+    top: 5px;
+    right: 10px;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .logo {
+    width: 40px;
+  }
+
+  .visitor-count {
+    font-size: 16px;
+  }
+}

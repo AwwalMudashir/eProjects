@@ -11,8 +11,8 @@ const AboutHero = () => {
         Your browser does not support the video tag.
       </video>
       <div className="content">
-        <h1>Get To Know Mountaineering</h1>
-        <p>Enjoy this immersive background experience!</p>
+        <h1>Explore Mountaineering</h1>
+        <p>Learn the essentials of mountaineering, to get you started now !</p>
         {/* <i className="fas fa-arrow-down text-[30px]"></i> */}
       </div>
     </div>

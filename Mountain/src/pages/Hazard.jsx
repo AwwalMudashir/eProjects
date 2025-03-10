@@ -1,6 +1,7 @@
 import React from 'react';
 import HazardHero from '../components/HazardHero';
 import HazardBody from '../components/HazardBody';
+import ShelterTimeline from '../components/Sheltering';
 
 
 const Hazard = () => {
@@ -8,6 +9,7 @@ const Hazard = () => {
         <div>
         <HazardHero/>
         <HazardBody/>
+        <ShelterTimeline/>
         </div>
     );
 };

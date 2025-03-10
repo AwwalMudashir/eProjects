@@ -16,7 +16,7 @@ const Techniques = () => {
   };
 
   return (
-    <div className=" w-[100%] m-[auto] pl-[2.5%] mb-[30px] mt-[30px]">
+    <div className=" w-[100%] m-[auto] pl-[2.5%] mb-[30px] mt-[30px] scroll-element">
     <div className="techniques-container">
       {/* Intro Section */}
       <div className="intro-section">

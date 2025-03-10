@@ -1,0 +1,119 @@
+.guidelines-container {
+  width: 100%;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  /* padding: 50px 20px; */
+  padding-left: 6%;
+  /* padding-right: 3%; */
+  position: relative;
+}
+
+.guidelines-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.guidelines-header h2 {
+  font-size: 4rem;
+  color: #8b4513;
+  font-weight: bold;
+  text-align: center;
+}
+
+.guidelines-title{
+  font-size: 2.5rem;
+  color: #8b4513;
+  font-weight: bold;
+  text-align: center;
+  
+}
+.guideline {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.guideline:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.guideline-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #ad5a10;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.guideline-item{
+  row-gap: 30px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.guideline-content {
+  background-color: #f8e78f;
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.guideline h3 {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.guideline p {
+  font-size: 1rem;
+
+  color: gray;
+}
+
+
+.infographic{
+  width: 100%;
+  display: grid;
+  margin: auto;
+  /* padding-left: 3%; */
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+  .guideline {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .guidelines-container{
+    padding-left: 0;
+  }
+
+  .guideline-icon {
+    margin-bottom: 10px;
+  }
+
+  .guideline-content {
+    width: 90%;
+    margin: auto;
+    margin-left: 3%;
+    height: 80px;
+  }
+
+  .connector {
+    display: none;
+  }
+
+  .infographic{
+    grid-template-columns: 1fr ;
+  }
+}

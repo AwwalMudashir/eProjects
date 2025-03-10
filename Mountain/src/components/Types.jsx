@@ -7,7 +7,7 @@ const Types = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="w-[100%] pl-[1%]">
+    <div className="w-[100%] pl-[1%] scroll-element">
     <div className="types-container">
       {/* Intro Section */}
       <div className="intro-section">

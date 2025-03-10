@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Outfit:wght@100..900&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -14,4 +16,63 @@ body{
   --gray-color: #f0f0f0;
   --white-color: #ffffff;
   --black-color: #222;
+}
+
+/* Back to Top Button Styles */
+.s-back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #ad5a10;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 18px;
+  /* border-radius: 50%; */
+  cursor: pointer;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.s-back-to-top.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.s-back-to-top.hide {
+  opacity: 0;
+  transform: scale(0);
+  pointer-events: none;
+}
+
+
+::-webkit-scrollbar{
+  scroll-behavior: smooth;
+}
+
+
+.scroll-element {
+  opacity: 0;
+  transform: translateY(30px); /* Start with an offset */
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.scroll-element.visible {
+  opacity: 1;
+  transform: translateY(0); /* Reset position for fade-in animation */
+}
+
+.scroll-element.scrolling-up {
+  opacity: 0;
+  transform: translateY(30px); /* Reverse animation for fade-out */
+}
+
+h1,h2,h3,h4{
+  font-family: "Delius",cursive;
+}
+
+p,li{
+  font-family: "Outfit",sans-serif;
 }

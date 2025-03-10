@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
 import './navbar.css';
+import VisitorCounter from './VisitorCounter';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ const Navbar = () => {
     const currentPath = location.pathname.replace('/', '') || 'home';
     setActiveItem(currentPath);
 
-    const pagesWithTransparentBackground = ['home', 'about', 'history', 'contact'];
+    const pagesWithTransparentBackground = ['home', 'about', 'history', 'contact','hazards-sheltering'];
     const handleScroll = () => {
       if (pagesWithTransparentBackground.includes(currentPath)) {
         setIsTransparent(window.scrollY === 0);
@@ -36,7 +37,11 @@ const Navbar = () => {
   return (
     <div>
       <nav className={`nav ${isTransparent ? 'transparent' : 'bg-[#8b4513]'} ${isTransparent ? '' : 'shadow-custom'}`}>
-        <img className='logo' onClick={() => navigate('/')} src="/logo1.png" alt="Mountain Hills Logo" />
+        <div className='flex'>
+
+        <img className='logo' onClick={() => navigate('/')} src="/logo1.webp" alt="Mountain Hills Logo" />
+        <VisitorCounter/>
+        </div>
         <ul className={`nav-lists ${isOpen ? 'open' : ''}`}>
           <li>
             <div className={`nav-item-container ${activeItem === 'home' ? 'active' : ''}`}>
@@ -49,6 +54,13 @@ const Navbar = () => {
             <div className={`nav-item-container ${activeItem === 'history' ? 'active' : ''}`}>
               <Link to={'/history'} className={`nav-item links text-[white] ${isTransparent ? '' : 'hover:text-[black]'} `} onClick={() => handleItemClick('history')}>
                 History
+              </Link>
+            </div>
+          </li>
+          <li>
+            <div className={`nav-item-container ${activeItem === 'gallery' ? 'active' : ''}`}>
+              <Link to={'/gallery'} className={`nav-item links text-[white] ${isTransparent ? '' : 'hover:text-[black]'} `} onClick={() => handleItemClick('gallery')}>
+                Gallery
               </Link>
             </div>
           </li>

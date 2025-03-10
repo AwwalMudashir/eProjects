@@ -3,7 +3,7 @@ import "./contact.css";
 
 const ContactBody = () => {
   return (
-    <div className="contact-container pb-[40px]">
+    <div className="contact-container pb-[40px] scroll-element">
       <div className="form-section">
         <h1 className="mb-[20px]">Get in Touch With Us!</h1>
         <p>
@@ -34,12 +34,12 @@ const ContactBody = () => {
       <div className="contact-item">
         <i className="fas fa-envelope"></i>
         <strong>Email</strong>
-        <p>email@gmail.com</p>
+        <p>alpineascents@gmail.com</p>
       </div>
       <div className="contact-item">
         <i className="fas fa-map-marker-alt"></i>
         <strong>Location</strong>
-        <p>ancien marché, address</p>
+        <p>ancien marché, france</p>
       </div>
     </div>
         <div className="map">

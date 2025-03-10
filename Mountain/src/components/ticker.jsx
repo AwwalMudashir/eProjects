@@ -40,7 +40,7 @@ const Ticker = () => {
   }, []);
 
   return (
-    <div className="fixed bottom-0 w-full bg-gray-900 text-[white] py-2 overflow-hidden" style={{zIndex:"99",backgroundColor:"#743a13",position:"fixed",bottom:"0"}}>
+    <div className="fixed bottom-0 w-full bg-gray-900 text-[white] py-2 overflow-hidden " style={{zIndex:"99",backgroundColor:"#743a13",position:"fixed",bottom:"0"}}>
       <marquee className="whitespace-nowrap animate-marquee px-4">{tickerText}</marquee>
     </div>
   );

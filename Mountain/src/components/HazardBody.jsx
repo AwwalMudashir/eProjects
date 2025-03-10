@@ -105,6 +105,11 @@ const HazardBody = () => {
                 </ul>
             </div>
             </div>
+
+            <div className="hazards-header mt-[150px]">
+                <h2>Shelering in Mountaineering</h2>
+                <p>Sheltering is essential for protection against harsh weather, extreme temperatures, and environmental hazards. Poor shelter can lead to hypothermia, heat exhaustion, or exposure-related illnesses. Natural disasters, strong winds, and flooding pose risks. Proper materials, location selection, and structural stability are crucial for safety and long-term survival in any environment</p>
+            </div>
         </section>
     );
 }

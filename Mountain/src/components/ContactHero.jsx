@@ -8,7 +8,7 @@ const ContactHero = () => {
 
           <div className="w-[100%]">
             <div className="">
-              <h1 className="text-[white] text-[60px] bg-white text-center pt-[20%]">Contact Us</h1>
+              <h1 className="text-[white] text-[60px] bg-white text-center pt-[20%]">Alpine Ascents</h1>
             </div>
           </div>
 
